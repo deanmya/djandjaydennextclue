@@ -3,15 +3,23 @@ const phrases = [
   "tremble before bast",
   "armed and dangerous",
   "we are undefeatable",
-  "cho no mai o kurae"
+  "born again"
 ];
 
-// Function to scramble a phrase
-function scramblePhrase(phrase) {
-  return phrase
+// Function to scramble a word
+function scrambleWord(word) {
+  return word
     .split('') // Convert to array of characters
     .sort(() => Math.random() - 0.5) // Shuffle the array
     .join(''); // Convert back to string
+}
+
+// Function to scramble each word in a phrase
+function scramblePhrase(phrase) {
+  return phrase
+    .split(' ') // Split into words
+    .map(word => scrambleWord(word)) // Scramble each word
+    .join(' '); // Join back into a phrase
 }
 
 // Function to display scrambled phrases
