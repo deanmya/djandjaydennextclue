@@ -16,14 +16,22 @@ body {
 }
 
 .phrase {
-  padding: 10px;
-  margin: 10px 0;
-  background: #e0e0e0;
-  border-radius: 5px;
-  cursor: move;
+  margin: 20px 0;
 }
 
-#checkOrder {
+.phrase p {
+  font-weight: bold;
+}
+
+.phrase input {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#checkAnswers {
   margin-top: 20px;
   padding: 10px 20px;
   background: #007bff;
@@ -33,7 +41,7 @@ body {
   cursor: pointer;
 }
 
-#checkOrder:hover {
+#checkAnswers:hover {
   background: #0056b3;
 }
 
